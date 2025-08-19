@@ -3,720 +3,648 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abaya Qismina Dewasa Muslimah - Elegant & Luxury</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Men Calotiy Bag - Tas Premium Waterproof</title>
+    <meta name="description" content="Men Calotiy Bag - Tas Sling Premium Waterproof dengan Magnetic Buckle dan Anti Theft Design. Hanya Rp 199.999!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'black': '#000000',
+                        'charcoal': '#36454f',
+                        'gold': '#d4af37',
+                        'champagne': '#f7e7ce',
+                        'white': '#ffffff'
+                    },
+                    fontFamily: {
+                        'heading': ['Cormorant Garamond', 'serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        :root {
-            --primary: #F8C8DC;
-            --secondary: #E2AFDE;
-            --accent: #D4A5A5;
-            --text: #5A5A5A;
-            --light: #FFF9FB;
-            --dark: #3A3A3A;
-            --gold: #D4AF37;
+        /* Custom CSS untuk efek premium */
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://nava.orderonline.id/men-calotiy-bag') center/cover no-repeat;
         }
         
-        body {
-            background-color: var(--light);
-            color: var(--text);
-            line-height: 1.6;
+        .gold-border {
+            border: 2px solid #d4af37;
         }
         
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
+        .gold-bg {
+            background: linear-gradient(to right, #d4af37, #f7e7ce);
         }
         
-        /* Header */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 20px 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        .feature-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
         
-        .logo {
-            font-size: 24px;
+        .price-strikethrough {
+            text-decoration: line-through;
+            color: #36454f;
+        }
+        
+        .price-highlight {
+            color: #d4af37;
             font-weight: 700;
-            color: var(--light);
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
         
         .cta-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 10px 25px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
         
         .cta-button:hover {
-            background-color: var(--dark);
-            transform: translateY(-2px);
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            padding: 60px 0;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-        }
-        
-        .hero p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-        
-        .price-container {
-            background-color: white;
-            display: inline-block;
-            padding: 20px 40px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-        
-        .original-price {
-            text-decoration: line-through;
-            color: var(--text);
-            font-size: 24px;
-        }
-        
-        .discounted-price {
-            color: var(--accent);
-            font-size: 36px;
-            font-weight: 700;
-        }
-        
-        .discount-badge {
-            background-color: var(--gold);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-weight: 600;
-            display: inline-block;
-            margin-left: 10px;
-        }
-        
-        .countdown {
-            font-size: 24px;
-            margin: 20px 0;
-            font-weight: 600;
-        }
-        
-        /* Product Gallery */
-        .gallery {
-            padding: 60px 0;
-        }
-        
-        .gallery h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        
-        .gallery-item {
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.03);
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        
-        /* Features */
-        .features {
-            padding: 60px 0;
-            background-color: white;
-        }
-        
-        .features h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-item {
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: 10px;
-            background-color: var(--light);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
-        
-        .feature-icon {
-            font-size: 40px;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        
-        .feature-item h3 {
-            margin-bottom: 15px;
-            color: var(--dark);
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 60px 0;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .testimonials h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .testimonial-item {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            color: var(--text);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: 600;
-            color: var(--dark);
-        }
-        
-        .stars {
-            color: var(--gold);
-            margin-bottom: 10px;
-        }
-        
-        /* FAQ */
-        .faq {
-            padding: 60px 0;
-        }
-        
-        .faq h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            font-size: 32px;
-            color: var(--dark);
-        }
-        
-        .faq-item {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 20px;
-        }
-        
-        .faq-question {
-            font-weight: 600;
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-        
-        /* CTA Section */
-        .cta-section {
-            padding: 80px 0;
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .cta-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        
-        .cta-section p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: 0 auto 40px;
-        }
-        
-        .big-button {
-            background-color: var(--accent);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-            display: inline-block;
-        }
-        
-        .big-button:hover {
-            background-color: var(--dark);
             transform: translateY(-3px);
-            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 7px 20px rgba(212, 175, 55, 0.5);
         }
         
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 40px 0 20px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            margin-bottom: 20px;
-            font-size: 18px;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: var(--primary);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid #444;
-            color: #aaa;
-            font-size: 14px;
-        }
-        
-        /* Popup */
-        .popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-            max-width: 300px;
-            transform: translateY(150%);
+        .gallery-img {
             transition: transform 0.5s ease;
-            z-index: 1000;
-        }
-        
-        .popup.show {
-            transform: translateY(0);
-        }
-        
-        .popup-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .popup-close {
-            background: none;
-            border: none;
-            font-size: 20px;
             cursor: pointer;
-            color: var(--text);
         }
         
-        .popup-content {
-            display: flex;
-            align-items: center;
+        .gallery-img:hover {
+            transform: scale(1.05);
         }
         
-        .popup-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 5px;
-            margin-right: 15px;
-            object-fit: cover;
+        .trust-badge {
+            transition: all 0.3s ease;
         }
         
-        .popup-text {
-            font-size: 14px;
+        .trust-badge:hover {
+            transform: scale(1.1);
         }
         
-        .popup-text strong {
-            color: var(--accent);
+        /* Animasi scroll */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         
-        /* Responsive */
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        /* Responsive adjustments */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
+            .hero-content {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
             }
             
-            .hero p {
-                font-size: 18px;
+            .feature-grid {
+                grid-template-columns: repeat(1, minmax(0, 1fr));
             }
-            
-            .price-container {
-                padding: 15px 30px;
+        }
+        
+        @media (min-width: 768px) {
+            .feature-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
             }
-            
-            .original-price {
-                font-size: 20px;
-            }
-            
-            .discounted-price {
-                font-size: 28px;
+        }
+        
+        @media (min-width: 1024px) {
+            .feature-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
             }
         }
     </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-content">
-            <div class="logo">Abaya Qismina</div>
-            <a href="#order" class="cta-button">Pesan Sekarang</a>
-        </div>
-    </header>
-    
+<body class="font-body text-charcoal bg-white">
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <h1>Abaya Qismina Dewasa Muslimah</h1>
-            <p>Elegant & Luxury - Tampil anggun dengan detail bordir emas premium yang mewah</p>
-            
-            <div class="price-container">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
-            </div>
-            
-            <div class="countdown" id="countdown">
-                Promo berakhir dalam: 23:59:59
-            </div>
-            
-            <a href="#order" class="cta-button">Dapatkan Sekarang</a>
-        </div>
-    </section>
-    
-    <!-- Product Gallery -->
-    <section class="gallery">
-        <div class="container">
-            <h2>Galeri Produk</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina Model 1">
+    <section class="hero-gradient min-h-screen flex items-center justify-center py-16 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto text-center text-white">
+            <div class="animate-fade-in-up">
+                <h1 class="font-heading text-4xl md:text-6xl font-bold mb-4">MEN CALOTIY BAG</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Tas Sling Premium Waterproof dengan Magnetic Buckle dan Anti Theft Design</p>
+                <div class="mb-8">
+                    <span class="text-lg line-through text-champagne mr-4">Rp 349.999</span>
+                    <span class="text-2xl font-bold text-gold">Rp 199.999</span>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_5151491750595682922.jpeg" alt="Abaya Qismina Model 2">
+                <div class="mb-10">
+                    <a href="#order" class="cta-button inline-block bg-gold text-black font-bold py-4 px-8 text-lg rounded-md font-heading text-xl">
+                        ORDER SEKARANG - HEMAT Rp 150.000!
+                    </a>
                 </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8080851750595683993.jpeg" alt="Abaya Qismina Model 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_6839561750595683944.jpeg" alt="Abaya Qismina Model 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_8897541750595682978.jpeg" alt="Abaya Qismina Model 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="https://cdn.orderonline.id/uploads/images_4829401750595682954.jpeg" alt="Abaya Qismina Model 6">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="trust-badge bg-black bg-opacity-50 py-2 px-4 rounded-full flex items-center">
+                        <svg class="w-5 h-5 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Garansi 30 Hari</span>
+                    </div>
+                    <div class="trust-badge bg-black bg-opacity-50 py-2 px-4 rounded-full flex items-center">
+                        <svg class="w-5 h-5 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Free Ongkir</span>
+                    </div>
+                    <div class="trust-badge bg-black bg-opacity-50 py-2 px-4 rounded-full flex items-center">
+                        <svg class="w-5 h-5 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Bayar di Tempat</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Features -->
-    <section class="features">
-        <div class="container">
-            <h2>Keunggulan Abaya Qismina</h2>
-            <div class="feature-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-tshirt"></i>
-                    </div>
-                    <h3>Bahan Premium</h3>
-                    <p>Dibuat dari bahan Chiffon Rose yang ringan dan mengalir anggun, dilapisi sepenuhnya dengan jersey lembut untuk kenyamanan maksimal.</p>
+
+    <!-- Product Showcase -->
+    <section class="py-16 px-4 md:px-8 bg-champagne">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-12 text-black">GALERI PRODUK</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98q-ltex2t4i2jfdb1.webp" alt="Men Calotiy Bag - Tampilan Depan" class="w-full h-auto gallery-img">
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-spa"></i>
-                    </div>
-                    <h3>Desain Elegan</h3>
-                    <p>Potongan A-line yang mengalir indah saat Anda berjalan dengan desain lapisan ruffle yang menciptakan siluet yang anggun.</p>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98q-lzurfwjbbh28a0.webp" alt="Men Calotiy Bag - Tampilan Samping" class="w-full h-auto gallery-img">
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-crown"></i>
-                    </div>
-                    <h3>Detail Mewah</h3>
-                    <p>Detail bordir emas premium di ujung lengan dan lapisan abaya menambahkan sentuhan mewah namun halus.</p>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://cdn.orderonline.id/uploads/images_1730041755621679375.jpg" alt="Men Calotiy Bag - Detail Magnetic Buckle" class="w-full h-auto gallery-img">
                 </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-gift"></i>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://cdn.orderonline.id/uploads/images_3490161755621680790.jpg" alt="Men Calotiy Bag - Waterproof Test" class="w-full h-auto gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://cdn.orderonline.id/uploads/images_6312811755621679347.jpg" alt="Men Calotiy Bag - Anti Theft Design" class="w-full h-auto gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://cdn.orderonline.id/uploads/images_2924231755621680816.jpg" alt="Men Calotiy Bag - Premium Colors" class="w-full h-auto gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://cdn.orderonline.id/uploads/images_2598871755622916473.jpg" alt="Men Calotiy Bag - Premium Colors" class="w-full h-auto gallery-img">
+                </div>
+                <div class="overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://cdn.orderonline.id/uploads/images_4873071755622916454.jpg" alt="Men Calotiy Bag - Premium Colors" class="w-full h-auto gallery-img">
                     </div>
-                    <h3>Paket Lengkap</h3>
-                    <p>Dilengkapi dengan syal tangan yang serasi, terbuat dari kain yang sama dan dihiasi dengan aksen emas.</p>
+            
+           <!-- Features & Benefits -->
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-12 text-black">KENAPA MEMILIH MEN CALOTIY BAG?</h2>
+            
+            <div class="feature-grid gap-8">
+                <div class="feature-card bg-champagne p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 005-5V8a5 5 0 00-5-5H7a5 5 0 00-5 5v8a4 4 0 004 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Waterproof</h3>
+                    <p>Material silicon berkualitas tinggi yang tahan air dan mudah dibersihkan</p>
+                </div>
+                
+                <div class="feature-card bg-champagne p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Anti Theft</h3>
+                    <p>Desain anti pencurian dengan buckle magnetik yang aman dan mudah digunakan</p>
+                </div>
+                
+                <div class="feature-card bg-champagne p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">ISI OTOMATIS</h3>
+                    <p>Fitur unik yang memungkinkan Anda mengatur isi tas secara otomatis tanpa ribet</p>
+                </div>
+                
+                <div class="feature-card bg-champagne p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.485 10.515a8 8 0 00-1.58-2.043l-2.175-1.58a1 1 0 00-1.19.05l-1.07 1.07a1 1 0 01-1.34 0l-1.07-1.07a1 1 0 00-1.19-.05l-2.175 1.58a8 8 0 00-1.58 2.043 8 8 0 000 9.92 8 8 0 001.58 2.043l2.175 1.58a1 1 0 001.19-.05l1.07-1.07a1 1 0 011.34 0l1.07 1.07a1 1 0 001.19.05l2.175-1.58a8 8 0 001.58-2.043 8 8 0 000-9.92z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Premium Colors</h3>
+                    <p>Tersedia dalam warna premium: Black, Grey, dan Blue untuk kesan elegan</p>
+                </div>
+                
+                <div class="feature-card bg-champagne p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">Praktis</h3>
+                    <p>Desain sling bag yang nyaman digunakan saat beraktivitas atau traveling</p>
+                </div>
+                
+                <div class="feature-card bg-champagne p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-black rounded-full flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364l4.586 4.586a6.75 6.75 0 009.556 0L20.686 16.5a6.75 6.75 0 000-9.556L17.07 3.329a6.75 6.75 0 00-9.556 0L4.318 6.318z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-xl mb-2">High Quality</h3>
+                    <p>Dibuat dari material berkualitas tinggi yang tahan lama dan awet dipakai</p>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Pricing & Promo -->
+    <section class="py-16 px-4 md:px-8 bg-black text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-heading text-3xl md:text-4xl mb-6">PROMO TERBATAS!</h2>
+            <p class="text-xl mb-8">Hemat Rp 150.000 dengan harga spesial hanya Rp 199.999!</p>
+            
+            <div class="mb-10">
+                <div class="inline-block bg-gold text-black font-bold py-2 px-6 rounded-full mb-4">
+                    Penawaran berlaku sampai:
+                </div>
+                <div class="text-3xl font-bold mb-6" id="countdown">24:00:00</div>
+            </div>
+            
+            <div class="mb-10">
+                <div class="text-2xl font-bold mb-4">Harga Normal: <span class="line-through text-champagne">Rp 349.999</span></div>
+                <div class="text-4xl font-bold text-gold mb-4">Harga Spesial: Rp 199.999</div>
+                <div class="text-xl">Anda Hemat: <span class="text-gold">Rp 150.000</span></div>
+            </div>
+            
+            <div class="mb-10">
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Garansi 30 Hari</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Fast delivery</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span>Bayar di Tempat</span>
+                    </div>
+                </div>
+            <a href="#order" class="cta-button inline-block bg-gold text-black font-bold py-4 px-12 text-xl rounded-md font-heading text-xl">
+                ORDER SEKARANG
+            </a>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section id="order" class="py-16 px-4 md:px-8 bg-champagne">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-12 text-black">FORM PEMESANAN</h2>
+            
+            <div class="glassmorphism rounded-xl p-6 md:p-10 shadow-xl">
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="nava" data-product-slug="men-calotiy-bag" data-product-id="68a4a3e2b47f58b92c0cf8e9" id="oo-embed-form-men-calotiy-bag-9782" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader {
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    animation: ooLoadingIn 10s ease;
+                                    -webkit-animation: ooLoadingIn 10s ease;
+                                    animation-fill-mode: forwards;
+                                    overflow: hidden
+                                }
+                                
+                                @keyframes ooLoadingIn {
+                                    0% {
+                                        visibility: hidden;
+                                        opacity: 0
+                                    }
+                                    20% {
+                                        visibility: visible;
+                                        opacity: 0
+                                    }
+                                    100% {
+                                        visibility: visible;
+                                        opacity: 1
+                                    }
+                                }
+                                
+                                @-webkit-keyframes ooLoadingIn {
+                                    0% {
+                                        visibility: hidden;
+                                        opacity: 0
+                                    }
+                                    20% {
+                                        visibility: visible;
+                                        opacity: 0
+                                    }
+                                    100% {
+                                        visibility: visible;
+                                        opacity: 1
+                                    }
+                                }
+                                
+                                .ooef-loader>div,
+                                .ooef-loader>div:after {
+                                    border-radius: 50%;
+                                    width: 2.5rem;
+                                    height: 2.5rem
+                                }
+                                
+                                .ooef-loader>div {
+                                    font-size: 10px;
+                                    position: relative;
+                                    text-indent: -9999em;
+                                    border: .25rem solid #f5f5f5;
+                                    border-left: .25rem solid #55c4cf;
+                                    -webkit-transform: translateZ(0);
+                                    -ms-transform: translateZ(0);
+                                    transform: translateZ(0);
+                                    -webkit-animation: ooLoading 1.1s infinite linear;
+                                    animation: ooLoading 1.1s infinite linear
+                                }
+                                
+                                .ooef-loader.error>div {
+                                    border-left: .25rem solid #ff4500;
+                                    animation-duration: 5s
+                                }
+                                
+                                @-webkit-keyframes ooLoading {
+                                    0% {
+                                        -webkit-transform: rotate(0);
+                                        transform: rotate(0)
+                                    }
+                                    100% {
+                                        -webkit-transform: rotate(360deg);
+                                        transform: rotate(360deg)
+                                    }
+                                }
+                                
+                                @keyframes ooLoading {
+                                    0% {
+                                        -webkit-transform: rotate(0);
+                                        transform: rotate(0)
+                                    }
+                                    100% {
+                                        -webkit-transform: rotate(360deg);
+                                        transform: rotate(360deg)
+                                    }
+                                }
+                            </style>
+                            <div aria-live="polite" role="status">
+                                <div>Loading...</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>Apa Kata Pelanggan Kami?</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Abayanya sangat nyaman dipakai dan bahannya adem. Bordir emasnya bikin tampilan jadi lebih mewah. Recomended banget!"</p>
-                    <p class="testimonial-author">- Siti Aisyah, Jakarta</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Pas banget buat acara pernikahan teman. Banyak yang nanya beli dimana. Pelayanannya juga cepat dan ramah."</p>
-                    <p class="testimonial-author">- Rina Dewi, Bandung</p>
-                </div>
-                <div class="testimonial-item">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">"Desainnya feminin banget dan jatuhnya pas di badan. Udah beli 2 warna karena diskonnya menggiurkan."</p>
-                    <p class="testimonial-author">- Maya Fitriani, Surabaya</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Pertanyaan yang Sering Diajukan</h2>
-            <div class="faq-item">
-                <h3 class="faq-question">Apa saja ukuran yang tersedia?</h3>
-                <p>Abaya Qismina tersedia dalam ukuran S, M, L, dan XL dengan cutting yang nyaman dan sesuai untuk tubuh wanita Asia.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Berapa lama waktu pengiriman?</h3>
-                <p>Waktu pengiriman 2-4 hari kerja untuk wilayah Jawa dan 3-7 hari kerja untuk luar Jawa setelah pembayaran dikonfirmasi.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Apakah bisa return atau tukar ukuran?</h3>
-                <p>Kami menerima penukaran ukuran dalam waktu 7 hari setelah barang diterima dengan syarat tag masih terpasang dan belum dicuci.</p>
-            </div>
-            <div class="faq-item">
-                <h3 class="faq-question">Metode pembayaran apa saja yang tersedia?</h3>
-                <p>Kami menerima transfer bank (BCA, Mandiri, BRI), e-wallet (OVO, Dana, ShopeePay), dan pembayaran via gerai retail (Alfamart, Indomaret).</p>
-            </div>
-        </div>
-    </section>
-    
-    <!-- CTA Section -->
-    <section class="cta-section" id="order">
-        <div class="container">
-            <h2>Jangan Lewatkan Kesempatan Ini!</h2>
-            <p>Dapatkan Abaya Qismina dengan diskon 45% hanya hari ini. Stok terbatas!</p>
+    <section class="py-16 px-4 md:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-4xl text-center mb-12 text-black">APA KATA CUSTOMER KAMI</h2>
             
-            <div class="price-container" style="margin-bottom: 30px;">
-                <span class="original-price">Rp445.000</span>
-                <span class="discounted-price">Rp245.000</span>
-                <span class="discount-badge">Diskon 45%</span>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-champagne p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Tas ini sangat praktis dan stylish! Waterproof dan anti theft designnya membuat saya merasa aman saat traveling. Highly recommended!"</p>
+                    <div class="font-bold">- Budi Setiawan</div>
+                </div>
+                
+                <div class="bg-champagne p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Kualitas material sangat bagus dan nyaman dipakai. Warna black-nya elegan dan cocok untuk berbagai acara. Pengiriman cepat!"</p>
+                    <div class="font-bold">- Andi Prasetyo</div>
+                </div>
+                
+                <div class="bg-champagne p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <p class="mb-4 italic">"Fitur isi otomatis sangat membantu! Tas ini menjadi pilihan utama saya saat traveling karena praktis dan aman."</p>
+                    <div class="font-bold">- Rina Sari</div>
+                </div>
             </div>
-            
-            <a href="https://nava.orderonline.id/abaya-qismina-dewasa-muslimah" class="big-button">Pesan Sekarang</a>
         </div>
     </section>
-    
+
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Tentang Kami</h3>
-                    <p>Menghadirkan busana muslimah berkualitas tinggi dengan desain elegan dan harga terjangkau.</p>
-                </div>
-                <div class="footer-column">
-                    <h3>Kontak</h3>
-                    <ul>
-                        <li><i class="fas fa-phone"></i> 0852-3669-9497</li>
-                        <li><i class="fas fa-envelope"></i> cs@abayaqismina.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Link Cepat</h3>
-                    <ul>
-                        <li><a href="#order">Pesan Sekarang</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">Syarat & Ketentuan</a></li>
-                        <li><a href="#">Kebijakan Privasi</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h3>Follow Kami</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+    <footer class="bg-black text-white py-12 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-heading text-2xl mb-4 text-gold">Calotiy Original</h3>
+                    <p class="mb-4">Toko online resmi produk Calotiy dengan kualitas premium dan harga terjangkau.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gold hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.185-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.143-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.279-.616-.054 2.349 1.24 4.495 3.166 5.159-1.056.293-2.274.382-3.532.237-.797.838-.311 1.496.582 1.496.546 0 1.106-.079 1.631-.233.504.564 1.171.893 1.893 1.013-.179.528-.449 1.013-.794 1.437.693.207 1.437.328 2.206.328.021 0 .041 0 .061-.001.614-.076 1.214-.233 1.786-.463-.401.582-.93 1.091-1.533 1.517.559-.06 1.093-.156 1.603-.286-.375.565-.833 1.055-1.367 1.453 1.737-.207 3.356-.893 4.711-1.946.485.411 1.061.747 1.685.986-.155.474-.381.919-.677 1.316.631-.097 1.232-.244 1.802-.436-.419.621-.947 1.172-1.541 1.631.537-.064 1.067-.169 1.587-.314-.359.535-.796 1.011-1.286 1.405.601-.059 1.19-.166 1.764-.316-.471.708-1.053 1.306-1.705 1.785h-20.968v-20.968h20.968z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gold hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.895.1-1.333 1.333-1.333h2.667v-4h-4c-3.309 0-5 1.691-5 5v2.333z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gold hover:text-white">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.645.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.352-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.449 0-6.25 2.803-6.25 6.25s2.801 6.25 6.25 6.25 6.25-2.803 6.25-6.25-2.801-6.25-6.25-6.25zm0 10.25c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
+                
+                <div>
+                    <h4 class="font-heading text-xl mb-4 text-gold">INFORMASI</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gold">Tentang Kami</a></li>
+                        <li><a href="#" class="hover:text-gold">Kontak</a></li>
+                        <li><a href="#" class="hover:text-gold">FAQ</a></li>
+                        <li><a href="#" class="hover:text-gold">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="hover:text-gold">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-xl mb-4 text-gold">LAYANAN</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gold">Pengiriman</a></li>
+                        <li><a href="#" class="hover:text-gold">Pembayaran</a></li>
+                        <li><a href="#" class="hover:text-gold">Garansi</a></li>
+                        <li><a href="#" class="hover:text-gold">Retur</a></li>
+                        <li><a href="#" class="hover:text-gold">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-heading text-xl mb-4 text-gold">NEWSLETTER</h4>
+                    <p class="mb-4">Berlangganan untuk mendapatkan penawaran spesial</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Anda" class="px-4 py-2 w-full rounded-l-md text-black">
+                        <button class="bg-gold text-black px-4 rounded-r-md font-bold">OK</button>
+                    </form>
+                </div>
             </div>
-            <div class="copyright">
-                &copy; 2023 Abaya Qismina. All Rights Reserved.
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>© 2023 Calotiy Original. All rights reserved.</p>
             </div>
         </div>
     </footer>
-    
-    <!-- Popup -->
-    <div class="popup" id="popup">
-        <div class="popup-header">
-            <h4>Promo Spesial!</h4>
-            <button class="popup-close" id="popup-close">&times;</button>
-        </div>
-        <div class="popup-content">
-            <img src="https://cdn.orderonline.id/uploads/images_6217421750595683690.jpeg" alt="Abaya Qismina" class="popup-img">
-            <div class="popup-text">
-                <strong>Diskon 45% Hari Ini!</strong> Dapatkan Abaya Qismina dengan harga Rp245.000 saja. Stok terbatas!
-            </div>
-        </div>
-    </div>
-    
+
+    <!-- OrderOnline Script -->
     <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 0);
-            
-            const diff = endOfDay - now;
-            
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('countdown').textContent = 
-                `Promo berakhir dalam: ${Math.floor(hours)}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-        
-        // Popup
-        setTimeout(() => {
-            document.getElementById('popup').classList.add('show');
-        }, 5000);
-        
-        document.getElementById('popup-close').addEventListener('click', () => {
-            document.getElementById('popup').classList.remove('show');
-        });
-        
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        if (typeof xLogError != 'function') {
+            var xLogError = function (error) {
+                var req = new XMLHttpRequest();
+                var payload = JSON.stringify({
+                    url: document.location.href,
+                    line: error.line,
+                    stack: error.stack
                 });
+                var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                req.open('POST', 'https://api.orderonline.id/log', true);
+                req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                req.send(params);
+            };
+        }
+        try {
+            if (typeof xEmbedScript != 'function') {
+                var xEmbedScript = function () {
+                    ! function (w, d, e, v, id, t, s) {
+                        if (d.getElementById(id)) return;
+                        t = d.createElement(e);
+                        t.async = !0;
+                        t.src = v;
+                        t.id = id;
+                        s = d.getElementsByTagName(e)[0];
+                        s.parentNode.insertBefore(t, s);
+                    }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                };
+            }
+            if (typeof xEmbedInit != 'function') {
+                var xEmbedInit = function (w, n) {
+                    if (w.ooe) return;
+                    n = w.ooe = function () {
+                        n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    };
+                    if (!w._ooe) w._ooe = n;
+                    n.push = n;
+                    n.loaded = !0;
+                    n.version = '8.0.4';
+                    n.queue = [];
+                };
+            }
+            xEmbedInit(window);
+            ooe('setup', 'redirect', 'https://nava.orderonline.id');
+            ooe('init', '5f119cd08dcbdb2737678706', '68a4a3e2b47f58b92c0cf8e9', '68a4a3e2b47f58b92c0cf8ea', 'oo-embed-form-men-calotiy-bag-9782', {
+                "mode": "page",
+                "action": "Klik untuk pemesanan",
+                "title": "Form Pemesanan",
+                "triggerPixel": true,
+                "triggerGtm": false
             });
-        });
+            if (!window.jQuery) {
+                ! function (w, d, e, v, id, t, s) {
+                    if (d.getElementById(id)) return;
+                    t = d.createElement(e);
+                    t.async = !0;
+                    t.src = v;
+                    t.id = id;
+                    t.addEventListener('load', xEmbedScript);
+                    s = d.getElementsByTagName(e)[0];
+                    s.parentNode.insertBefore(t, s);
+                }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+            } else {
+                xEmbedScript();
+            }
+        } catch (e) {
+            xLogError(e);
+            throw e;
+        }
+    </script>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Set the date we're counting down to (24 hours from now)
+        var countDownDate = new Date().getTime() + (24 * 60 * 60 * 1000);
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="countdown"
+            document.getElementById("countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
     </script>
 </body>
 </html>
